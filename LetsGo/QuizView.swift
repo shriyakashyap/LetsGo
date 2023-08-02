@@ -8,68 +8,91 @@
 import SwiftUI
 
 struct QuizView: View {
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text("About you")
-                .font(.title)
     
-                .fontWeight(.heavy)
-                .multilineTextAlignment(.leading)
-                .padding(.bottom, 20)
+    var body: some View {
+ 
+        NavigationStack {
             
-            Text("What is your name?")
-            TextField("Name", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                .padding(.all, 5)
-                .border(Color.gray, width: 1)
-            
-            Text("How old are you?")
-                .padding(.top, 20)
-            TextField("Age", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                .padding(.all, 5)
-                .border(Color.gray, width: 1)
-            
-            Text("When do you like to travel?")
-                .padding(.top, 20)
-            
-            VStack {
+            VStack(alignment: .leading) {
+                Text("About you")
+                    .font(.title)
+                    .fontWeight(.heavy)
+                    .multilineTextAlignment(.leading)
+                    .padding(.bottom, 20)
                 
-                HStack {
-                    Button {
-                    } label: {
-                        Image("spring")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
+                Text("What is your name?")
+                TextField("Name", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    .padding(.all, 5)
+                    .border(Color.gray, width: 1)
+                
+                Text("How old are you?")
+                    .padding(.top, 20)
+                TextField("Age", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    .padding(.all, 5)
+                    .border(Color.gray, width: 1)
+                
+                Text("When do you like to travel?")
+                    .padding(.top, 20)
+                
+                VStack {
+
+                    HStack {
+                        Button {
+                        } label: {
+                            Image("springCropped")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(10)
+                        }
+
+                        Button {
+                        } label: {
+                            Image("summerCropped")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(10)
+                        }
                     }
                     
-                    Button {
-                    } label: {
-                        Image("summer")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
+                    HStack {
+                        Text("Spring")
+                        Text("Summer")
                     }
-                }
-                
-                HStack {
-                    Button {
-                    } label: {
-                        Image("autumn")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200.0, height: 200.0)
+
+                    HStack {
+                        Button {
+                        } label: {
+                            Image("autumnCropped")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(10)
+                        }
+
+                        Button {
+                        } label: {
+                            Image("winterCropped")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(10)
+                        }
                     }
                     
-                    Button {
-                    } label: {
-                        Image("winter")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200.0, height: 200.0)
+                    HStack {
+                        Text("Autumn")
+                        Text("Winter")
                     }
+                    
                 }
+                .padding()
+                
+            }
+            .padding()
+            
+            NavigationLink(destination: Quiz2View()) {
+                Text("Continue")
             }
         }
+        
     }
 }
 

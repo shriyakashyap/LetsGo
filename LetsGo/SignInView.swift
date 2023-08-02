@@ -1,20 +1,36 @@
-//
-//  SignInView.swift
-//  LetsGo
-//
-//  Created by scholar on 01/08/2023.
-//
-
 import SwiftUI
-
 struct SignInView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  var body: some View {
+    NavigationStack {
+      ZStack {
+        Color(red: 0.9490196078431372, green: 0.6078431372549019, blue: 0.4235294117647059)
+          .ignoresSafeArea()
+        VStack {
+          Image("AppLogo2")
+            .resizable(resizingMode: .stretch)
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 300.0)
+            .cornerRadius(/*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
+          Text("Welcome!")
+            .font(.title)
+            .fontWeight(.medium)
+            .foregroundColor(Color(red: 0.10196078431372549, green: 0.3254901960784314, blue: 0.3607843137254902, opacity: 1.0))
+          NavigationLink(destination: QuizView()) {
+            Text("Click here to begin")
+              .foregroundColor(Color(red:0.8627450980392157, green:0.984313725490196, blue:0.9215686274509803))
+                  }
+                  .font(.title2)
+                  .buttonStyle(.bordered)
+                            .tint(.black)
+                            .controlSize(.large)
+      
+        }
+      }
     }
-}
-
-struct SignInView_Previews: PreviewProvider {
+  }
+  struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+      SignInView()
     }
+  }
 }
