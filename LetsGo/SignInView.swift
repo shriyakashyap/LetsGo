@@ -25,6 +25,13 @@ struct SignInView: View {
                   .buttonStyle(.bordered)
                             .tint(.black)
                             .controlSize(.large)
+            
+            Spacer()
+            
+            NavigationLink(destination: LanguageView()) {
+                Text("Select language")
+                    .foregroundColor(Color(red:0.10196078431372549, green:0.3254901960784314, blue:0.3607843137254902))
+            }
       
         }
       }

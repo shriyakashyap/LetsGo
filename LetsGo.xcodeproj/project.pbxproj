@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD1165F92A7904720074935E /* LetsGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1165F82A7904720074935E /* LetsGoApp.swift */; };
 		BD1166002A7904730074935E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1165FF2A7904730074935E /* Preview Assets.xcassets */; };
+		BD4F613C2A7A993800B62EA6 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F613B2A7A993800B62EA6 /* LanguageView.swift */; };
 		BD9F758B2A7A5C3F0084A025 /* Quiz2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9F758A2A7A5C3F0084A025 /* Quiz2View.swift */; };
 		BDEE25722A79196300BECE1F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE25712A79196300BECE1F /* SignInView.swift */; };
 		BDEE25742A79199E00BECE1F /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE25732A79199E00BECE1F /* QuizView.swift */; };
@@ -21,6 +22,7 @@
 		BD1165F52A7904720074935E /* LetsGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1165F82A7904720074935E /* LetsGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoApp.swift; sourceTree = "<group>"; };
 		BD1165FF2A7904730074935E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD4F613B2A7A993800B62EA6 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		BD9F758A2A7A5C3F0084A025 /* Quiz2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz2View.swift; sourceTree = "<group>"; };
 		BDEE25712A79196300BECE1F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		BDEE25732A79199E00BECE1F /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				BD1165F82A7904720074935E /* LetsGoApp.swift */,
 				BDEE25712A79196300BECE1F /* SignInView.swift */,
+				BD4F613B2A7A993800B62EA6 /* LanguageView.swift */,
 				BDEE25732A79199E00BECE1F /* QuizView.swift */,
 				BD9F758A2A7A5C3F0084A025 /* Quiz2View.swift */,
 				BDEE25792A791A4B00BECE1F /* PlacesForYouView.swift */,
@@ -154,6 +157,7 @@
 				BDEE257A2A791A4B00BECE1F /* PlacesForYouView.swift in Sources */,
 				BDEE25742A79199E00BECE1F /* QuizView.swift in Sources */,
 				BD9F758B2A7A5C3F0084A025 /* Quiz2View.swift in Sources */,
+				BD4F613C2A7A993800B62EA6 /* LanguageView.swift in Sources */,
 				BD1165F92A7904720074935E /* LetsGoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
